@@ -1,0 +1,267 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+							<style>
+								body {
+									background-color: white; /* Ensure the iframe has a white background */
+								}
+
+								
+							</style>
+                        </head>
+                        <body>
+                            <!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Interattivo - Storia della Musica Barocca</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 20px;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .quiz-container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .question-block {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-left: 5px solid #007BFF;
+      background-color: #f1f9ff;
+    }
+    .question {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      float: right;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    .feedback {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .correct {
+      color: green;
+    }
+    .wrong {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Quiz Interattivo - Storia della Musica (Il Barocco)</h1>
+<div class="quiz-container">
+  <form id="quizForm">
+
+    <!-- Domanda 1 -->
+    <div class="question-block">
+      <div class="question">1. Chi fu il compositore dell'opera "L'Orfeo", considerata il primo melodramma della storia?</div>
+      <div class="options">
+        <label><input type="radio" name="q1" value="a"> Antonio Vivaldi</label>
+        <label><input type="radio" name="q1" value="b"> Claudio Monteverdi</label>
+        <label><input type="radio" name="q1" value="c"> Johann Sebastian Bach</label>
+      </div>
+      <div class="feedback" id="fb1"></div>
+    </div>
+
+    <!-- Domanda 2 -->
+    <div class="question-block">
+      <div class="question">2. In quale anno Luigi XIV, detto il Re Sole, salì al trono di Francia?</div>
+      <div class="options">
+        <label><input type="radio" name="q2" value="a"> 1643</label>
+        <label><input type="radio" name="q2" value="b"> 1685</label>
+        <label><input type="radio" name="q2" value="c"> 1701</label>
+      </div>
+      <div class="feedback" id="fb2"></div>
+    </div>
+
+    <!-- Domanda 3 -->
+    <div class="question-block">
+      <div class="question">3. Quanti musicisti circa lavoravano alla corte del Re Sole?</div>
+      <div class="options">
+        <label><input type="radio" name="q3" value="a"> 50</label>
+        <label><input type="radio" name="q3" value="b"> 100</label>
+        <label><input type="radio" name="q3" value="c"> 200</label>
+      </div>
+      <div class="feedback" id="fb3"></div>
+    </div>
+
+    <!-- Domanda 4 -->
+    <div class="question-block">
+      <div class="question">4. Dove si trasferì la corte di Luigi XIV nel 1682?</div>
+      <div class="options">
+        <label><input type="radio" name="q4" value="a"> A Parigi</label>
+        <label><input type="radio" name="q4" value="b"> A Versailles</label>
+        <label><input type="radio" name="q4" value="c"> A Lione</label>
+      </div>
+      <div class="feedback" id="fb4"></div>
+    </div>
+
+    <!-- Domanda 5 -->
+    <div class="question-block">
+      <div class="question">5. Quali due grandi compositori nacquero nel 1685?</div>
+      <div class="options">
+        <label><input type="radio" name="q5" value="a"> Mozart e Beethoven</label>
+        <label><input type="radio" name="q5" value="b"> Bach e Händel</label>
+        <label><input type="radio" name="q5" value="c"> Vivaldi e Scarlatti</label>
+      </div>
+      <div class="feedback" id="fb5"></div>
+    </div>
+
+    <!-- Domanda 6 -->
+    <div class="question-block">
+      <div class="question">6. In quale anno fu pubblicata "Le quattro stagioni" di Vivaldi?</div>
+      <div class="options">
+        <label><input type="radio" name="q6" value="a"> 1725</label>
+        <label><input type="radio" name="q6" value="b"> 1714</label>
+        <label><input type="radio" name="q6" value="c"> 1699</label>
+      </div>
+      <div class="feedback" id="fb6"></div>
+    </div>
+
+    <!-- Domanda 7 -->
+    <div class="question-block">
+      <div class="question">7. Qual era il nome dell’orchestra stabile di archi alla corte di Luigi XIV?</div>
+      <div class="options">
+        <label><input type="radio" name="q7" value="a"> I Violini di Parigi</label>
+        <label><input type="radio" name="q7" value="b"> Gli Archi di Versailles</label>
+        <label><input type="radio" name="q7" value="c"> I 24 Violini del Re</label>
+      </div>
+      <div class="feedback" id="fb7"></div>
+    </div>
+
+    <!-- Domanda 8 -->
+    <div class="question-block">
+      <div class="question">8. Quale funzione aveva il “maestro di cappella” nella corte barocca?</div>
+      <div class="options">
+        <label><input type="radio" name="q8" value="a"> Organizzare i balli</label>
+        <label><input type="radio" name="q8" value="b"> Comporre e dirigere la musica per le occasioni ufficiali</label>
+        <label><input type="radio" name="q8" value="c"> Gestire l’economia del palazzo</label>
+      </div>
+      <div class="feedback" id="fb8"></div>
+    </div>
+
+    <!-- Domanda 9 -->
+    <div class="question-block">
+      <div class="question">9. Quale strumento nasce proprio alla corte del Re Sole?</div>
+      <div class="options">
+        <label><input type="radio" name="q9" value="a"> Il violino</label>
+        <label><input type="radio" name="q9" value="b"> L’oboe</label>
+        <label><input type="radio" name="q9" value="c"> Il clavicembalo</label>
+      </div>
+      <div class="feedback" id="fb9"></div>
+    </div>
+
+    <!-- Domanda 10 -->
+    <div class="question-block">
+      <div class="question">10. Quale città italiana divenne famosa per la costruzione di strumenti ad arco?</div>
+      <div class="options">
+        <label><input type="radio" name="q10" value="a"> Roma</label>
+        <label><input type="radio" name="q10" value="b"> Firenze</label>
+        <label><input type="radio" name="q10" value="c"> Cremona</label>
+      </div>
+      <div class="feedback" id="fb10"></div>
+    </div>
+
+    <!-- Domanda 11 -->
+    <div class="question-block">
+      <div class="question">11. Quale compositore italiano scrisse la celebre sonata “Il trillo del diavolo”?</div>
+      <div class="options">
+        <label><input type="radio" name="q11" value="a"> Domenico Scarlatti</label>
+        <label><input type="radio" name="q11" value="b"> Antonio Vivaldi</label>
+        <label><input type="radio" name="q11" value="c"> Giuseppe Tartini</label>
+      </div>
+      <div class="feedback" id="fb11"></div>
+    </div>
+
+    <!-- Domanda 12 -->
+    <div class="question-block">
+      <div class="question">12. Che tipo di esecuzione caratterizza la sonata “Il trillo del diavolo”?</div>
+      <div class="options">
+        <label><input type="radio" name="q12" value="a"> Accordi rapidi</label>
+        <label><input type="radio" name="q12" value="b"> Arpeggi estesi</label>
+        <label><input type="radio" name="q12" value="c"> Trilli veloci</label>
+      </div>
+      <div class="feedback" id="fb12"></div>
+    </div>
+
+  </form>
+</div>
+
+<script>
+  const correctAnswers = {
+    q1: 'b',
+    q2: 'a',
+    q3: 'c',
+    q4: 'b',
+    q5: 'b',
+    q6: 'a',
+    q7: 'c',
+    q8: 'b',
+    q9: 'b',
+    q10: 'c',
+    q11: 'c',
+    q12: 'c'
+  };
+
+  document.querySelectorAll('input[type="radio"]').forEach(input => {
+    input.addEventListener("change", function () {
+      const questionNum = this.name; // q1, q2, ecc.
+      const feedbackDiv = document.getElementById("fb" + questionNum.replace("q", ""));
+      if (this.value === correctAnswers[questionNum]) {
+        feedbackDiv.innerHTML = '<span class="correct">✅ Risposta corretta!</span>';
+      } else {
+        const correctLetter = correctAnswers[questionNum];
+        let correctText = "";
+        switch(correctLetter) {
+          case 'a': correctText = "Antonio Vivaldi"; break;
+          case 'b': correctText = "Claudio Monteverdi"; break;
+          case 'c': correctText = "Johann Sebastian Bach"; break;
+          case 'd': correctText = "Georg Friedrich Händel"; break;
+        }
+        feedbackDiv.innerHTML = `<span class="wrong">❌ Risposta errata. Corretta: ${correctLetter.toUpperCase()}</span>`;
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+
+
+
+							<script>
+                            	
+							</script>
+                        </body>
+                        </html>
+                    
