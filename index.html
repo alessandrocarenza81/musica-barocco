@@ -18,7 +18,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quiz Interattivo - Storia della Musica Barocca</title>
+  <title>Quiz Interattivo - Il Barocco</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -52,18 +52,6 @@
       display: block;
       margin-bottom: 5px;
     }
-    button {
-      padding: 10px 20px;
-      background-color: #28a745;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      float: right;
-    }
-    button:hover {
-      background-color: #218838;
-    }
     .feedback {
       margin-top: 10px;
       font-weight: bold;
@@ -78,140 +66,228 @@
 </head>
 <body>
 
-<h1>Quiz Interattivo - Storia della Musica (Il Barocco)</h1>
+<h1>Quiz Interattivo - Il Barocco</h1>
 <div class="quiz-container">
   <form id="quizForm">
 
     <!-- Domanda 1 -->
     <div class="question-block">
-      <div class="question">1. Chi fu il compositore dell'opera "L'Orfeo", considerata il primo melodramma della storia?</div>
+      <div class="question">1. Che cosa caratterizza lo stile artistico del Barocco?</div>
       <div class="options">
-        <label><input type="radio" name="q1" value="a"> Antonio Vivaldi</label>
-        <label><input type="radio" name="q1" value="b"> Claudio Monteverdi</label>
-        <label><input type="radio" name="q1" value="c"> Johann Sebastian Bach</label>
+        <label><input type="radio" name="q1" value="a"> Semplicità e sobrietà</label>
+        <label><input type="radio" name="q1" value="b"> Spettacoli grandiosi e celebrativi</label>
+        <label><input type="radio" name="q1" value="c"> Rappresentazioni minimaliste</label>
       </div>
       <div class="feedback" id="fb1"></div>
     </div>
 
     <!-- Domanda 2 -->
     <div class="question-block">
-      <div class="question">2. In quale anno Luigi XIV, detto il Re Sole, salì al trono di Francia?</div>
+      <div class="question">2. Qual è il ruolo principale della musica barocca?</div>
       <div class="options">
-        <label><input type="radio" name="q2" value="a"> 1643</label>
-        <label><input type="radio" name="q2" value="b"> 1685</label>
-        <label><input type="radio" name="q2" value="c"> 1701</label>
+        <label><input type="radio" name="q2" value="a"> Intrattenimento leggero</label>
+        <label><input type="radio" name="q2" value="b"> Esaltare la magnificenza dei re in occasioni solenni</label>
+        <label><input type="radio" name="q2" value="c"> Musica esclusivamente religiosa</label>
       </div>
       <div class="feedback" id="fb2"></div>
     </div>
 
     <!-- Domanda 3 -->
     <div class="question-block">
-      <div class="question">3. Quanti musicisti circa lavoravano alla corte del Re Sole?</div>
+      <div class="question">3. Chi era noto come "il Re Sole"?</div>
       <div class="options">
-        <label><input type="radio" name="q3" value="a"> 50</label>
-        <label><input type="radio" name="q3" value="b"> 100</label>
-        <label><input type="radio" name="q3" value="c"> 200</label>
+        <label><input type="radio" name="q3" value="a"> Giorgio I di Inghilterra</label>
+        <label><input type="radio" name="q3" value="b"> Luigi XIV di Francia</label>
+        <label><input type="radio" name="q3" value="c"> Federico il Grande di Prussia</label>
       </div>
       <div class="feedback" id="fb3"></div>
     </div>
 
     <!-- Domanda 4 -->
     <div class="question-block">
-      <div class="question">4. Dove si trasferì la corte di Luigi XIV nel 1682?</div>
+      <div class="question">4. Quanti musicisti lavoravano alla corte del Re Sole?</div>
       <div class="options">
-        <label><input type="radio" name="q4" value="a"> A Parigi</label>
-        <label><input type="radio" name="q4" value="b"> A Versailles</label>
-        <label><input type="radio" name="q4" value="c"> A Lione</label>
+        <label><input type="radio" name="q4" value="a"> Circa 50</label>
+        <label><input type="radio" name="q4" value="b"> Circa 100</label>
+        <label><input type="radio" name="q4" value="c"> Circa 200</label>
       </div>
       <div class="feedback" id="fb4"></div>
     </div>
 
     <!-- Domanda 5 -->
     <div class="question-block">
-      <div class="question">5. Quali due grandi compositori nacquero nel 1685?</div>
+      <div class="question">5. Come si chiamava l’orchestra stabile di archi alla corte del Re Sole?</div>
       <div class="options">
-        <label><input type="radio" name="q5" value="a"> Mozart e Beethoven</label>
-        <label><input type="radio" name="q5" value="b"> Bach e Händel</label>
-        <label><input type="radio" name="q5" value="c"> Vivaldi e Scarlatti</label>
+        <label><input type="radio" name="q5" value="a"> I Violini di Parigi</label>
+        <label><input type="radio" name="q5" value="b"> Gli Archi di Versailles</label>
+        <label><input type="radio" name="q5" value="c"> I 24 Violini del Re</label>
       </div>
       <div class="feedback" id="fb5"></div>
     </div>
 
     <!-- Domanda 6 -->
     <div class="question-block">
-      <div class="question">6. In quale anno fu pubblicata "Le quattro stagioni" di Vivaldi?</div>
+      <div class="question">6. Cosa faceva un “maestro di cappella” nella corte barocca?</div>
       <div class="options">
-        <label><input type="radio" name="q6" value="a"> 1725</label>
-        <label><input type="radio" name="q6" value="b"> 1714</label>
-        <label><input type="radio" name="q6" value="c"> 1699</label>
+        <label><input type="radio" name="q6" value="a"> Organizzava i balli</label>
+        <label><input type="radio" name="q6" value="b"> Comprava gli strumenti musicali</label>
+        <label><input type="radio" name="q6" value="c"> Comporre e dirigere la musica per le occasioni ufficiali</label>
       </div>
       <div class="feedback" id="fb6"></div>
     </div>
 
     <!-- Domanda 7 -->
     <div class="question-block">
-      <div class="question">7. Qual era il nome dell’orchestra stabile di archi alla corte di Luigi XIV?</div>
+      <div class="question">7. Dove si svilupparono le botteghe di liuteria più famose durante il Barocco?</div>
       <div class="options">
-        <label><input type="radio" name="q7" value="a"> I Violini di Parigi</label>
-        <label><input type="radio" name="q7" value="b"> Gli Archi di Versailles</label>
-        <label><input type="radio" name="q7" value="c"> I 24 Violini del Re</label>
+        <label><input type="radio" name="q7" value="a"> A Roma</label>
+        <label><input type="radio" name="q7" value="b"> A Firenze</label>
+        <label><input type="radio" name="q7" value="c"> A Cremona</label>
       </div>
       <div class="feedback" id="fb7"></div>
     </div>
 
     <!-- Domanda 8 -->
     <div class="question-block">
-      <div class="question">8. Quale funzione aveva il “maestro di cappella” nella corte barocca?</div>
+      <div class="question">8. Chi furono i celebri liutai di Cremona nel periodo barocco?</div>
       <div class="options">
-        <label><input type="radio" name="q8" value="a"> Organizzare i balli</label>
-        <label><input type="radio" name="q8" value="b"> Comporre e dirigere la musica per le occasioni ufficiali</label>
-        <label><input type="radio" name="q8" value="c"> Gestire l’economia del palazzo</label>
+        <label><input type="radio" name="q8" value="a"> Amati, Guarnieri e Stradivari</label>
+        <label><input type="radio" name="q8" value="b"> Scarlatti, Vivaldi e Tartini</label>
+        <label><input type="radio" name="q8" value="c"> Lully, Händel e Bach</label>
       </div>
       <div class="feedback" id="fb8"></div>
     </div>
 
     <!-- Domanda 9 -->
     <div class="question-block">
-      <div class="question">9. Quale strumento nasce proprio alla corte del Re Sole?</div>
+      <div class="question">9. Quale forma musicale ha una struttura AB?</div>
       <div class="options">
-        <label><input type="radio" name="q9" value="a"> Il violino</label>
-        <label><input type="radio" name="q9" value="b"> L’oboe</label>
-        <label><input type="radio" name="q9" value="c"> Il clavicembalo</label>
+        <label><input type="radio" name="q9" value="a"> Forma tripartita</label>
+        <label><input type="radio" name="q9" value="b"> Forma bipartita</label>
+        <label><input type="radio" name="q9" value="c"> Forma ciclica</label>
       </div>
       <div class="feedback" id="fb9"></div>
     </div>
 
     <!-- Domanda 10 -->
     <div class="question-block">
-      <div class="question">10. Quale città italiana divenne famosa per la costruzione di strumenti ad arco?</div>
+      <div class="question">10. Quale forma musicale ha una struttura ABA?</div>
       <div class="options">
-        <label><input type="radio" name="q10" value="a"> Roma</label>
-        <label><input type="radio" name="q10" value="b"> Firenze</label>
-        <label><input type="radio" name="q10" value="c"> Cremona</label>
+        <label><input type="radio" name="q10" value="a"> Forma monodica</label>
+        <label><input type="radio" name="q10" value="b"> Forma tripartita</label>
+        <label><input type="radio" name="q10" value="c"> Rondo</label>
       </div>
       <div class="feedback" id="fb10"></div>
     </div>
 
     <!-- Domanda 11 -->
     <div class="question-block">
-      <div class="question">11. Quale compositore italiano scrisse la celebre sonata “Il trillo del diavolo”?</div>
+      <div class="question">11. Cos’è il ritornello in un brano barocco?</div>
       <div class="options">
-        <label><input type="radio" name="q11" value="a"> Domenico Scarlatti</label>
-        <label><input type="radio" name="q11" value="b"> Antonio Vivaldi</label>
-        <label><input type="radio" name="q11" value="c"> Giuseppe Tartini</label>
+        <label><input type="radio" name="q11" value="a"> Un'alternanza di forte e piano</label>
+        <label><input type="radio" name="q11" value="b"> La ripetizione identica di una parte musicale</label>
+        <label><input type="radio" name="q11" value="c"> Una modifica improvvisa del tempo</label>
       </div>
       <div class="feedback" id="fb11"></div>
     </div>
 
     <!-- Domanda 12 -->
     <div class="question-block">
-      <div class="question">12. Che tipo di esecuzione caratterizza la sonata “Il trillo del diavolo”?</div>
+      <div class="question">12. Che cosa significa “stile concertato”?</div>
       <div class="options">
-        <label><input type="radio" name="q12" value="a"> Accordi rapidi</label>
-        <label><input type="radio" name="q12" value="b"> Arpeggi estesi</label>
-        <label><input type="radio" name="q12" value="c"> Trilli veloci</label>
+        <label><input type="radio" name="q12" value="a"> Tutti gli strumenti suonano insieme</label>
+        <label><input type="radio" name="q12" value="b"> Frasi musicali eseguite da diversi gruppi strumentali</label>
+        <label><input type="radio" name="q12" value="c"> Solo l’orchestra suona senza solista</label>
       </div>
       <div class="feedback" id="fb12"></div>
+    </div>
+
+    <!-- Domanda 13 -->
+    <div class="question-block">
+      <div class="question">13. Quale compositore italiano scrisse la sonata intitolata "Il trillo del diavolo"?</div>
+      <div class="options">
+        <label><input type="radio" name="q13" value="a"> Domenico Scarlatti</label>
+        <label><input type="radio" name="q13" value="b"> Antonio Vivaldi</label>
+        <label><input type="radio" name="q13" value="c"> Giuseppe Tartini</label>
+      </div>
+      <div class="feedback" id="fb13"></div>
+    </div>
+
+    <!-- Domanda 14 -->
+    <div class="question-block">
+      <div class="question">14. Quale innovazione introdusse Bartolomeo Cristofori?</div>
+      <div class="options">
+        <label><input type="radio" name="q14" value="a"> Corde pizzicate</label>
+        <label><input type="radio" name="q14" value="b"> Corde percosse (precursore del pianoforte)</label>
+        <label><input type="radio" name="q14" value="c"> Tasti aggiuntivi</label>
+      </div>
+      <div class="feedback" id="fb14"></div>
+    </div>
+
+    <!-- Domanda 15 -->
+    <div class="question-block">
+      <div class="question">15. Qual è una caratteristica tipica del concerto grosso?</div>
+      <div class="options">
+        <label><input type="radio" name="q15" value="a"> Dialogo tra un piccolo gruppo e l’intera orchestra</label>
+        <label><input type="radio" name="q15" value="b"> Solista che suona da solo</label>
+        <label><input type="radio" name="q15" value="c"> Orchestra ridotta a pochi strumenti</label>
+      </div>
+      <div class="feedback" id="fb15"></div>
+    </div>
+
+    <!-- Domanda 16 -->
+    <div class="question-block">
+      <div class="question">16. Quale compositore è celebre per la suite “Water Music”?</div>
+      <div class="options">
+        <label><input type="radio" name="q16" value="a"> Antonio Vivaldi</label>
+        <label><input type="radio" name="q16" value="b"> Georg Friedrich Händel</label>
+        <label><input type="radio" name="q16" value="c"> Arcangelo Corelli</label>
+      </div>
+      <div class="feedback" id="fb16"></div>
+    </div>
+
+    <!-- Domanda 17 -->
+    <div class="question-block">
+      <div class="question">17. Cosa indica la “progressione” in un brano barocco?</div>
+      <div class="options">
+        <label><input type="radio" name="q17" value="a"> Ripetizione dello stesso tema a volumi diversi</label>
+        <label><input type="radio" name="q17" value="b"> Ripetizione dello stesso motivo a diverse altezze tonali</label>
+        <label><input type="radio" name="q17" value="c"> Modifica del tempo</label>
+      </div>
+      <div class="feedback" id="fb17"></div>
+    </div>
+
+    <!-- Domanda 18 -->
+    <div class="question-block">
+      <div class="question">18. Cos’è la “ripetizione in eco”?</div>
+      <div class="options">
+        <label><input type="radio" name="q18" value="a"> Risuonare di un tema solo all’inizio e alla fine</label>
+        <label><input type="radio" name="q18" value="b"> Ripetizione di una frase prima in piano e poi in forte</label>
+        <label><input type="radio" name="q18" value="c"> Due solisti che suonano lo stesso tema</label>
+      </div>
+      <div class="feedback" id="fb18"></div>
+    </div>
+
+    <!-- Domanda 19 -->
+    <div class="question-block">
+      <div class="question">19. Quale compositore fu direttore musicale della chiesa di San Tommaso a Lipsia?</div>
+      <div class="options">
+        <label><input type="radio" name="q19" value="a"> Johann Sebastian Bach</label>
+        <label><input type="radio" name="q19" value="b"> Wolfgang Amadeus Mozart</label>
+        <label><input type="radio" name="q19" value="c"> Ludwig van Beethoven</label>
+      </div>
+      <div class="feedback" id="fb19"></div>
+    </div>
+
+    <!-- Domanda 20 -->
+    <div class="question-block">
+      <div class="question">20. In quale anno fu pubblicata "Le quattro stagioni" di Vivaldi?</div>
+      <div class="options">
+        <label><input type="radio" name="q20" value="a"> 1725</label>
+        <label><input type="radio" name="q20" value="b"> 1714</label>
+        <label><input type="radio" name="q20" value="c"> 1699</label>
+      </div>
+      <div class="feedback" id="fb20"></div>
     </div>
 
   </form>
@@ -220,17 +296,25 @@
 <script>
   const correctAnswers = {
     q1: 'b',
-    q2: 'a',
-    q3: 'c',
-    q4: 'b',
-    q5: 'b',
-    q6: 'a',
+    q2: 'b',
+    q3: 'b',
+    q4: 'c',
+    q5: 'c',
+    q6: 'c',
     q7: 'c',
-    q8: 'b',
+    q8: 'a',
     q9: 'b',
-    q10: 'c',
-    q11: 'c',
-    q12: 'c'
+    q10: 'b',
+    q11: 'b',
+    q12: 'b',
+    q13: 'c',
+    q14: 'b',
+    q15: 'a',
+    q16: 'b',
+    q17: 'b',
+    q18: 'b',
+    q19: 'a',
+    q20: 'a'
   };
 
   document.querySelectorAll('input[type="radio"]').forEach(input => {
@@ -243,10 +327,9 @@
         const correctLetter = correctAnswers[questionNum];
         let correctText = "";
         switch(correctLetter) {
-          case 'a': correctText = "Antonio Vivaldi"; break;
-          case 'b': correctText = "Claudio Monteverdi"; break;
-          case 'c': correctText = "Johann Sebastian Bach"; break;
-          case 'd': correctText = "Georg Friedrich Händel"; break;
+          case 'a': correctText = "Semplicità e sobrietà"; break;
+          case 'b': correctText = "Spettacoli grandiosi e celebrativi"; break;
+          case 'c': correctText = "Musica esclusivamente religiosa"; break;
         }
         feedbackDiv.innerHTML = `<span class="wrong">❌ Risposta errata. Corretta: ${correctLetter.toUpperCase()}</span>`;
       }
